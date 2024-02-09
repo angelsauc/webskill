@@ -35,7 +35,7 @@
                                 <a class="nav-link" href="#">Selecciona categoría</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Registrate.html">Regístrate</a>
+                                <a class="nav-link" href="#modalId" data-bs-toggle="modal" data-bs-target="#modalId">Regístrate</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Inicia sesión</a>
@@ -200,62 +200,7 @@
 
 
 
-<section>
-<!-- Modal trigger button -->
-<button
-    type="button"
-    class="btn btn-primary btn-lg"
-    data-bs-toggle="modal"
-    data-bs-target="#modalId"
->
-    Launch
-</button>
 
-<!-- Modal Body -->
-<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-<div
-    class="modal fade"
-    id="modalId"
-    tabindex="-1"
-    data-bs-backdrop="static"
-    data-bs-keyboard="false"
-    
-    role="dialog"
-    aria-labelledby="modalTitleId"
-    aria-hidden="true"
->
-    <div
-        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-        role="document"
-    >
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalTitleId">
-                    Modal title
-                </h5>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                ></button>
-            </div>
-            <div class="modal-body">Body</div>
-            <div class="modal-footer">
-                <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                >
-                    Close
-                </button>
-                <button type="button" class="btn btn-primary">Save</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-</section>
 
 <!--Boton para subir arriba-->
 <a class="btn btn-success" href="#top">
@@ -270,9 +215,56 @@ Subir
     </div>
 </div>
 </div>
+<section>
+    <!-- Modal trigger button -->
 
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+            <div class="modal-content bg-light">
+                <div class="text-center">
+                    <h3 class="modal-title text-center mb-2 " id="modalTitleId">
+                        Registro de Usuario
+                        </h5>
+
+                </div>
+                <div class="modal-body bg-light ">
+                    <div class="modal-content rounded bg-white  ">
+
+                        <div class="m-2">
+                            <form action="" method="get">
+                                <p class="mb-1">Usuario</p>
+                                <input class="rounded w-100 p-1 border-light-subtle" type="text" name="" id="">
+                                <p class="mb-1">Contraseña</p>
+                                <input class="rounded w-100 p-1 border-light-subtle" type="text" name="" id="">
+                                <p class="mb-1">Repite la contraseña</p>
+                                <input class="rounded w-100 p-1 border-light-subtle" type="text" name="" id="">
+                                <p class="mb-1">Email</p>
+                                <input class="rounded w-100 p-1 border-light-subtle" type="text" name="" id="">
+                                <p class="mb-1">Telefono</p>
+                                <input class="rounded w-100 p-1 border-light-subtle" type="text" name="" id="">
+                                <p class="mb-1">Direccion</p>
+                                <input class="rounded w-100 p-1 border-light-subtle" type="text" name="" id="">
+                                <button type="submit" class="btn btn-success mt-3  w-100">
+                                    Entrar
+                                </button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
 
         </main>
+    
         <footer>
 
         </footer>
@@ -290,4 +282,5 @@ Subir
             crossorigin="anonymous"
         ></script>
     </body>
+    
 </html>
